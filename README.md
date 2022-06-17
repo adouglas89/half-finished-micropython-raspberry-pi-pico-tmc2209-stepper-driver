@@ -10,3 +10,7 @@ Be very careful not to disconnect power or anything, these boards appear to be e
 Also the driver doesn't work unless it has it's vmot voltage.  Some boards have solder pads that need a solder bridge to connect the uart pin to the actual chip, like a jumper.
 Read the description carefully of the other github project I link to below, it has many important warnings and points.
 This is derived from this library, which is in turn in development : https://github.com/Chr157i4n/TMC2209_Raspberry_Pi
+
+Load all the files straight onto your pico using Thonny, wire everything up, you don't need a motor connected to test it, and see if it works before spending much more time on things.
+
+You need a 1k resistor from rx to tx on the pico, then a wire from rx to the UART pin on the TMC2209 board.
